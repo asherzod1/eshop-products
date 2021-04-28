@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 86%;
+    margin: 0 auto;
+}
+.wrap{
+    position: relative;
+}
+
+.navbar{
+    background: #eee;
+    
+    .container{
+        
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+
+        a{
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+            &:hover{
+                background: #333;
+                color: #fff;
+            }
+        }
+
+        .menu{
+            display: flex;
+            .savatDiv{
+                padding: 8px 20px;
+                position: relative;
+                .savat-counter{
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    border-radius: 50%;
+                    background-color: red;
+                    font-size: 15px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+.cards{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card{
+        border: 1px solid #ccc;
+        width: 23%;
+        padding: 10px;
+        text-align: center;
+        margin-top: 30px;
+        box-shadow: 0 0 10px #777;
+        h3{
+            height: 45px;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+        button{
+            width: 90%;
+            margin: 10px auto;
+            padding: 8px 8px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            bottom: 0;
+
+            &:hover{
+                color: red;
+                background-color: #fff;
+                border:  1px solid red;
+                padding: 7px 8px;
+            }
+        }
+        .button-h{
+            color: red;
+            background-color: yellow;
+            border:  1px solid red;
+            padding: 7px 8px;
+        }
+    }
+}
+
+.display-none{
+    display: none;
+}
+
+.modal{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background: rgba($color: #000000, $alpha: 0.7);
+
+    .modal-body{
+        background-color: #fff;
+        position: absolute;
+        width: 600px;
+        padding: 50px;
+        margin: 100px 380px;
+    }
+}
